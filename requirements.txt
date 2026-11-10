@@ -1,0 +1,23 @@
+# Outlier Detection (notebooks/02_outlier_detection.ipynb)
+# + Dimensionality Reduction (notebooks/03_dimensionality_reduction.ipynb)
+pandas>=2.2
+numpy>=1.26
+scipy>=1.11
+scikit-learn>=1.4
+statsmodels>=0.14
+matplotlib>=3.8
+seaborn>=0.13
+pyod>=2.0
+langdetect>=1.0.9
+umap-learn>=0.5
+pacmap>=0.7
+spacy>=3.7
+torch>=2.0            # nur für den Autoencoder
+# spaCy-Sprachmodelle (separat installieren):
+#   python -m spacy download it_core_news_sm
+#   python -m spacy download de_core_news_sm
+#   python -m spacy download fr_core_news_sm
+# Notebooks ausführen
+jupyter
+nbconvert
+ipykernel

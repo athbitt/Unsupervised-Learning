@@ -1,0 +1,12 @@
+# Python / Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+ul/
+.venv/
+
+# wird von den Notebooks aus dem Zip entpackt
+data/raw/
+
+# Caches, werden beim Ausführen neu erzeugt
+data/tokens_preprocessed.pkl

@@ -1,0 +1,177 @@
+{
+  "iqr": {
+    "per_feature_k1.5": {
+      "n_words": 247,
+      "n_chars": 249,
+      "avg_word_len": 110,
+      "share_non_alpha": 149,
+      "share_digits": 174,
+      "share_upper": 318,
+      "n_persons": 263,
+      "n_places": 178,
+      "n_organisations": 135,
+      "n_languages": 17,
+      "n_attachments": 101,
+      "n_cases": 307,
+      "year": 30
+    },
+    "per_feature_k3.0": {
+      "n_words": 89,
+      "n_chars": 84,
+      "avg_word_len": 4,
+      "share_non_alpha": 30,
+      "share_digits": 41,
+      "share_upper": 121,
+      "n_persons": 82,
+      "n_places": 22,
+      "n_organisations": 28,
+      "n_languages": 0,
+      "n_attachments": 101,
+      "n_cases": 307,
+      "year": 3
+    },
+    "any_all13_k1.5": 1419,
+    "any_cont_k1.5": 1143,
+    "any_cont_k3.0": 352
+  },
+  "skewness": {
+    "before": {
+      "n_words": 3.048,
+      "n_chars": 3.01,
+      "avg_word_len": 0.527,
+      "share_non_alpha": 3.765,
+      "share_digits": 4.364,
+      "share_upper": 7.677,
+      "n_persons": 3.753,
+      "n_places": 1.485,
+      "n_organisations": 2.381
+    },
+    "after": {
+      "n_words": -0.266,
+      "n_chars": -0.288,
+      "avg_word_len": 0.527,
+      "share_non_alpha": 3.172,
+      "share_digits": 3.954,
+      "share_upper": 5.821,
+      "n_persons": 0.618,
+      "n_places": -0.009,
+      "n_organisations": 0.628
+    },
+    "log1p_transformed": [
+      "n_words",
+      "n_chars",
+      "share_non_alpha",
+      "share_digits",
+      "share_upper",
+      "n_persons",
+      "n_places",
+      "n_organisations"
+    ]
+  },
+  "zscore": {
+    "features": [
+      "n_words",
+      "n_chars",
+      "avg_word_len",
+      "n_persons",
+      "n_places"
+    ],
+    "per_feature": {
+      "n_words": 19,
+      "n_chars": 20,
+      "avg_word_len": 13,
+      "n_persons": 12,
+      "n_places": 1
+    },
+    "any": 45
+  },
+  "mahalanobis": {
+    "features": [
+      "n_words",
+      "avg_word_len",
+      "share_non_alpha",
+      "share_digits",
+      "share_upper",
+      "n_persons",
+      "n_places",
+      "n_organisations"
+    ],
+    "p": 8,
+    "chi2_cutoff_99.5": 21.955,
+    "euclid": 149,
+    "classic": 128,
+    "cond_cov_with_n_chars": 71679.3,
+    "robust_mcd": 533,
+    "mcd_support_size": 3037
+  },
+  "hull": {
+    "log(n_words)_vs_share_non_alpha": {
+      "n_layers": 140,
+      "outliers_layer1_2": 19,
+      "runtime_s": 0.34
+    },
+    "log(n_words)_vs_n_persons": {
+      "n_layers": 233,
+      "outliers_layer1_2": 26,
+      "runtime_s": 0.58
+    },
+    "union": 37
+  },
+  "abod": 39,
+  "iforest": 39,
+  "lof": 39,
+  "n_flags_all_distribution": {
+    "0": 2630,
+    "1": 722,
+    "2": 352,
+    "3": 60,
+    "4": 24,
+    "5": 23,
+    "6": 16,
+    "7": 6,
+    "8": 6
+  },
+  "n_letters": 3839,
+  "flagged_per_method": {
+    "iqr_any": 1143,
+    "zscore_any": 45,
+    "maha_classic": 128,
+    "maha_robust": 533,
+    "hull": 37,
+    "abod": 39,
+    "iforest": 39,
+    "lof": 39
+  },
+  "lecture_methods": [
+    "iqr_any",
+    "zscore_any",
+    "maha_classic",
+    "hull",
+    "abod"
+  ],
+  "extension_methods": [
+    "maha_robust",
+    "iforest",
+    "lof"
+  ],
+  "n_flags_all_ge3": 135,
+  "n_flags_lecture_ge3": 65,
+  "n_flags_all_ge1": 1209,
+  "category_counts_flags_ge3": {
+    "Datenproblem": 64,
+    "möglicher echter Sonderfall": 45,
+    "unklar": 26
+  },
+  "category_share_flags_ge3": {
+    "Datenproblem": 0.474,
+    "möglicher echter Sonderfall": 0.333,
+    "unklar": 0.193
+  },
+  "n_exclude": 27,
+  "n_lang_mismatch": 137,
+  "n_lang_to_check": 122,
+  "n_short_telegrams_kept": 8,
+  "missing_main_language": 761,
+  "missing_year": 330,
+  "random_state": 42
+}

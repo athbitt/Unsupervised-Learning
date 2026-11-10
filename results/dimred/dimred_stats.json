@@ -1,0 +1,203 @@
+{
+  "n_letters_total": 3839,
+  "n_excluded": 27,
+  "n_used": 3812,
+  "curse_simulation_contrast": {
+    "2": 1064.2535,
+    "10": 8.3276,
+    "50": 1.3459,
+    "100": 0.8246,
+    "500": 0.2848,
+    "1000": 0.1838
+  },
+  "features_pca": {
+    "eigenvalues": [
+      3.2774,
+      1.5706,
+      1.0852,
+      0.9677,
+      0.7342,
+      0.6483,
+      0.559,
+      0.1576,
+      0.0
+    ],
+    "explained_variance_pc1_3_pct": [
+      36.42,
+      17.45,
+      12.06
+    ],
+    "trace_check": 9.0,
+    "recommended_n_components": {
+      "Scree-Ellbogen": 2,
+      "Kaiser (λ > 1)": 3,
+      "kumuliert ≥ 80 %": 5,
+      "Parallel Analysis (95 %)": 3
+    }
+  },
+  "tfidf": {
+    "all": {
+      "n_docs": 3812,
+      "n_terms": 12546,
+      "sparsity_pct": 99.279,
+      "empty_rows": 0
+    },
+    "italian": {
+      "n_docs": 2116,
+      "n_terms": 4912,
+      "sparsity_pct": 98.55,
+      "empty_rows": 0
+    }
+  },
+  "curse_real_data": {
+    "TF-IDF Kosinus": {
+      "Dimension": 12546,
+      "Mittelwert": 0.9783,
+      "Std/Mittelwert": 0.0329,
+      "(max-min)/min": 21.9799,
+      "Anteil Distanzen > 0,9·max %": 97.3337
+    },
+    "TF-IDF euklidisch": {
+      "Dimension": 12546,
+      "Mittelwert": 1.3986,
+      "Std/Mittelwert": 0.017,
+      "(max-min)/min": 3.7937,
+      "Anteil Distanzen > 0,9·max %": 99.7732
+    },
+    "9 Features euklidisch": {
+      "Dimension": 9,
+      "Mittelwert": 3.9161,
+      "Std/Mittelwert": 0.436,
+      "(max-min)/min": 89.813,
+      "Anteil Distanzen > 0,9·max %": 0.0002
+    }
+  },
+  "svd_explained_variance_pct": {
+    "all": {
+      "2": 2.363,
+      "10": 6.395,
+      "50": 13.161,
+      "100": 18.522
+    },
+    "italian": {
+      "2": 2.031,
+      "10": 6.606,
+      "50": 16.054,
+      "100": 24.054
+    }
+  },
+  "tsne_seed_procrustes_disparity": {
+    "0 vs 1": 0.4948,
+    "0 vs 2": 0.1766,
+    "1 vs 2": 0.5894
+  },
+  "umap_transform_language_knn_accuracy_pct": 95.54,
+  "linear_ae_vs_pca": {
+    "principal_angles_deg": [
+      66.024,
+      2.951
+    ],
+    "r2_linear_ae": 0.5892,
+    "r2_relu_ae": 0.4042,
+    "pca_eigenvalues_1_3": [
+      10.3977,
+      4.3628,
+      4.3337
+    ]
+  },
+  "quality": {
+    "alle Sprachen | PCA/LSA": {
+      "trustworthiness": 0.7627,
+      "knn_preservation": 0.0238,
+      "spearman_global": 0.6901,
+      "Laufzeit_s": 0.7419
+    },
+    "alle Sprachen | t-SNE": {
+      "trustworthiness": 0.939,
+      "knn_preservation": 0.2358,
+      "spearman_global": 0.5612,
+      "Laufzeit_s": 12.616
+    },
+    "alle Sprachen | UMAP": {
+      "trustworthiness": 0.9283,
+      "knn_preservation": 0.1982,
+      "spearman_global": 0.6971,
+      "Laufzeit_s": 6.1033
+    },
+    "alle Sprachen | PaCMAP": {
+      "trustworthiness": 0.9054,
+      "knn_preservation": 0.1684,
+      "spearman_global": 0.6764,
+      "Laufzeit_s": 1.4763
+    },
+    "alle Sprachen | Autoencoder": {
+      "trustworthiness": 0.8824,
+      "knn_preservation": 0.0928,
+      "spearman_global": 0.4996,
+      "Laufzeit_s": 8.5266
+    },
+    "nur Italienisch | PCA/LSA": {
+      "trustworthiness": 0.6415,
+      "knn_preservation": 0.0303,
+      "spearman_global": 0.2284,
+      "Laufzeit_s": 0.3039
+    },
+    "nur Italienisch | t-SNE": {
+      "trustworthiness": 0.8793,
+      "knn_preservation": 0.2411,
+      "spearman_global": 0.2921,
+      "Laufzeit_s": 13.9039
+    },
+    "nur Italienisch | UMAP": {
+      "trustworthiness": 0.8621,
+      "knn_preservation": 0.2068,
+      "spearman_global": 0.3556,
+      "Laufzeit_s": 3.42
+    },
+    "nur Italienisch | PaCMAP": {
+      "trustworthiness": 0.8209,
+      "knn_preservation": 0.1785,
+      "spearman_global": 0.3075,
+      "Laufzeit_s": 0.8422
+    },
+    "nur Italienisch | Autoencoder": {
+      "trustworthiness": 0.738,
+      "knn_preservation": 0.0746,
+      "spearman_global": 0.059,
+      "Laufzeit_s": 1.6935
+    }
+  },
+  "umap_best_setting": {
+    "n_neighbors": 5,
+    "min_dist": 0.0,
+    "knn_preservation": 0.2196
+  },
+  "embeddings_step": "übersprungen: keine data/emb_*.npy vorhanden",
+  "outliers_in_projection": {
+    "n_outliers": 110,
+    "Distanz zum 10. Nachbarn (UMAP-2D)": {
+      "median_pct_outlier": 42.4,
+      "median_pct_rest": 50.2
+    },
+    "Distanz zum Zentrum (UMAP-2D)": {
+      "median_pct_outlier": 52.1,
+      "median_pct_rest": 50.0
+    },
+    "Distanz zum 10. Nachbarn (TF-IDF, Kosinus)": {
+      "median_pct_outlier": 73.1,
+      "median_pct_rest": 49.6
+    }
+  },
+  "runtimes_s": {
+    "alle Sprachen | PCA/LSA": 0.74,
+    "alle Sprachen | t-SNE": 12.62,
+    "alle Sprachen | UMAP": 6.1,
+    "alle Sprachen | PaCMAP": 1.48,
+    "alle Sprachen | Autoencoder": 8.53,
+    "nur Italienisch | PCA/LSA": 0.3,
+    "nur Italienisch | t-SNE": 13.9,
+    "nur Italienisch | UMAP": 3.42,
+    "nur Italienisch | PaCMAP": 0.84,
+    "nur Italienisch | Autoencoder": 1.69
+  }
+}

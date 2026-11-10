@@ -1,0 +1,14 @@
+,IQR,markiert (k=1.5),markiert (k=3.0),Rückgang %
+n_words,261.0,247,89,64.0
+n_chars,1680.5,249,84,66.0
+avg_word_len,0.4751098151972464,110,4,96.0
+share_non_alpha,0.01872323379407867,149,30,80.0
+share_digits,0.011377969843022237,174,41,76.0
+share_upper,0.0363171754409816,318,121,62.0
+n_persons,2.0,263,82,69.0
+n_places,3.0,178,22,88.0
+n_organisations,1.0,135,28,79.0
+n_languages,1.0,17,0,100.0
+n_attachments,0.0,101,101,0.0
+n_cases,0.0,307,307,0.0
+year,2.0,30,3,90.0

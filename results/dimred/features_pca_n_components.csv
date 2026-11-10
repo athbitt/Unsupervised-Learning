@@ -1,0 +1,5 @@
+Kriterium,empfohlene Anzahl PCs
+Scree-Ellbogen,2
+Kaiser (λ > 1),3
+kumuliert ≥ 80 %,5
+Parallel Analysis (95 %),3
